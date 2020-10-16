@@ -1,4 +1,4 @@
-<Page class="coverImage">
+
 <ActionBar>
     <!--
     Use the NavigationButton as a side-drawer button in Android
@@ -6,18 +6,19 @@
     -->
     <Label text="Smart Investigation"></Label>
 </ActionBar>
+<FlexboxLayout>
 <StackLayout class="form">
-    <Label class="login" text="Login"></Label>
+    <Image src="~/images/logo.png"></Image>
     <StackLayout class="input-field">
-      <TextField hint="  UserID"  [text]="userid" class="input" (textChange)="onTextChange1($event)"></TextField>
+      <TextField hint="  UserID"  class="input" (textChange)="onTextChange1($event)"></TextField>
     </StackLayout>
 
     <StackLayout class="input-field">
-      <TextField hint="  Password" [text]="password" class="input" (textChange)="onTextChange2($event)"></TextField>
+      <TextField hint="  Password" class="input" (textChange)="onTextChange2($event)"></TextField>
     </StackLayout>
 
     <Button text="Log In"  (tap)="verify()" class="butn" ></Button>
-    <Label class="fp" text="Forgot Password?"></Label>
+    <Label class="fp" text="Forgot Password?" (tap)="fp()" ></Label>
 
 </StackLayout>
-</Page>
+</FlexboxLayout>

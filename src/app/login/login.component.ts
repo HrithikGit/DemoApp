@@ -11,6 +11,8 @@ import {Router} from "@angular/router";
 export class LoginComponent implements OnInit {
     userid="";
     password="";
+    ui="";
+    ps="";
     public constructor(private router:Router){}
 
     ngOnInit(): void {
@@ -19,6 +21,7 @@ export class LoginComponent implements OnInit {
 
     verify(){
         console.log(this.userid+" "+this.password);
+        console.log(this.ui+" ?")
         if(this.userid=="123" && this.password=="123"){
             console.log("Login SuccessFull");
             this.router.navigate(["home"]);
@@ -40,5 +43,8 @@ export class LoginComponent implements OnInit {
     onTextChange2(args: EventData) {
         const tv = args.object as TextView;
         this.password=tv.text;
+    }
+    fp(){
+        console.log("Yo!");
     }
 }
