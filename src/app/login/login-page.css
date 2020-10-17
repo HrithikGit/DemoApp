@@ -1,0 +1,55 @@
+
+.form {
+    margin-left: 30;
+    margin-right: 30;
+    flex-grow: 2;
+    vertical-align: middle;
+}
+
+Image{
+    margin-bottom: 20;
+    height: 80;
+}
+
+StackLayout{
+    width:300;
+    padding: 5 5;
+    background-color:rgba(255,255,255);
+    border-radius: 6;
+}
+TextField {
+    placeholder-color: #C4AFB4;
+    color: black;
+    border-width: 1;
+    border-color:gray;
+    height: 50;
+    padding: 10 10;
+    margin-bottom: 14;
+    border-radius: 6;
+}
+
+.butn{
+  background-color: #008CBA; /* Green */
+  border: none;
+  width: 150;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 16;
+  border-radius: 15;
+}
+
+.login{
+    font-size: 30;
+    font-family: "Georgia";
+    text-align: center;
+    padding-bottom: 20;
+}
+
+.fp{
+    margin-top: 10;
+    text-align: right;
+}
