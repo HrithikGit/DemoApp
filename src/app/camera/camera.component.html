@@ -15,7 +15,9 @@
     <Label text="Camera"></Label>
 </ActionBar>
 
-<GridLayout class="page__content">
-    <Label class="page__content-icon far" text="&#xf1ea;"></Label>
-    <Label class="page__content-placeholder" text="<!-- Page content goes here -->"></Label>
+<GridLayout>
+    <StackLayout>
+        <Image *ngIf="myImage" class="imageCss" src="{{myImage}}" strech="aspectFill" ></Image>
+        <Button class="btn btn-primary" text="Open Camera" (tap)="openCam()"></Button>
+    </StackLayout>
 </GridLayout>

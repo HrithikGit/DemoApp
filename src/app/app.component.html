@@ -8,7 +8,7 @@ https://docs.nativescript.org/angular/ui/professional-ui-components/ng-SideDrawe
         <StackLayout row="0" class="nt-drawer__header">
             <Image class="nt-drawer__header-image fas t-36" src="font://&#xf2bd;"></Image>
             <Label class="nt-drawer__header-brand" text="User Name"></Label>
-            <Label class="nt-drawer__header-footnote" text="username@mail.com"></Label>
+            <Label class="nt-drawer__header-footnote" text="username@gmail.com"></Label>
         </StackLayout>
 
         <ScrollView row="1" class="nt-drawer__body">
@@ -19,18 +19,23 @@ https://docs.nativescript.org/angular/ui/professional-ui-components/ng-SideDrawe
                 </GridLayout>
 
                 <GridLayout columns="auto, *" class="nt-drawer__list-item" [class.-selected]="isComponentSelected('/camera')" (tap)="onNavItemTap('/camera')">
-                    <Label col="0" text="&#xf1ea;" class="nt-icon far"></Label>
+                    <Label col="0" text="&#8450;" class="nt-icon far"></Label>
                     <Label col="1" text="Camera" class="p-r-10"></Label>
                 </GridLayout>
 
                 <GridLayout columns="auto, *" class="nt-drawer__list-item" [class.-selected]="isComponentSelected('/api')" (tap)="onNavItemTap('/api')">
-                    <Label col="0" text="&#xf002;" class="nt-icon fas"></Label>
+                    <Label col="0" text="&#9993;" class="nt-icon fas"></Label>
                     <Label col="1" text="API" class="p-r-10"></Label>
                 </GridLayout>
 
                 <GridLayout columns="auto, *" class="nt-drawer__list-item" [class.-selected]="isComponentSelected('/qrcode')" (tap)="onNavItemTap('/qrcode')">
                     <Label col="0" text="&#xf005;" class="nt-icon fas"></Label>
                     <Label col="1" text="Qr Scanner" class="p-r-10"></Label>
+                </GridLayout>
+
+                <GridLayout columns="auto, *" class="nt-drawer__list-item" [class.-selected]="isComponentSelected('/investigate')" (tap)="onNavItemTap('/investigate')">
+                    <Label col="0" text="&#9745;" class="nt-icon fas"></Label>
+                    <Label col="1" text="Investigation Information" class="p-r-10"></Label>
                 </GridLayout>
 
                 <StackLayout class="hr"></StackLayout>

@@ -12,11 +12,11 @@
     <ActionItem icon="res://menu" android:visibility="collapsed" (tap)="onDrawerButtonTap()"
         ios.position="left">
     </ActionItem>
-    <Label text="Featured"></Label>
+    <Label text="Scan Page"></Label>
 </ActionBar>
 
-<GridLayout class="page__content">
-    <Label class="page__content-icon fas" text="&#xf005;"></Label>
-    <Label text="Place QR Scanner Code here"></Label>
-    <Label class="page__content-placeholder" text="<!-- Page content goes here -->"></Label>
-</GridLayout>
+<StackLayout>
+    <Label text="Scan QR" horizontalAlignment="center"></Label>
+    <Button height="50" backgroundColor="orange"  text="Scan" (tap)="doScanWithBackCamera()"></Button>
+
+</StackLayout>

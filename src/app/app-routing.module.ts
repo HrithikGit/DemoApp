@@ -9,8 +9,10 @@ const routes: Routes = [
     { path: "camera", loadChildren: () => import("~/app/camera/camera.module").then((m) => m.CameraModule) },
     { path: "api", loadChildren: () => import("~/app/apiintegration/api.module").then((m) => m.ApiModule) },
     { path: "qrcode", loadChildren: () => import("~/app/qrcode/qrcode.module").then((m) => m.QrcodeModule) },
-    { path: "settings", loadChildren: () => import("~/app/settings/settings.module").then((m) => m.SettingsModule) }
+    { path: "settings", loadChildren: () => import("~/app/settings/settings.module").then((m) => m.SettingsModule) },
+    { path: "investigate", loadChildren: () => import("~/app/investigate/investigate.module").then((m) => m.InvestigateModule) }
 ];
+
 
 @NgModule({
     imports: [NativeScriptRouterModule.forRoot(routes)],

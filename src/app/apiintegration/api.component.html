@@ -15,7 +15,7 @@
     <Label text="API"></Label>
 </ActionBar>
 
-<GridLayout class="page__content">
-    <Label class="page__content-icon fas" text="&#xf002;"></Label>
-    <Label class="page__content-placeholder" text="<!-- Page content goes here -->"></Label>
-</GridLayout>
+<FlexBoxLayout justifyContent="center" flexDirection="column" alignItems="stretch" width="400" height="300" background="white" style="border-radius: 40%;">
+    <TextField hint="Enter a valid city-name" [text]="name" style="font-size : 20 ;" (textChange)="onTextChange($event)"  width="250" height="50" color="black"></TextField>
+    <Button text="Get Weather" (tap)="onTap()" width="200" style="border-radius: 50%;"></Button>
+</FlexBoxLayout>
